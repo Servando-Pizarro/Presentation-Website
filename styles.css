@@ -1,0 +1,111 @@
+:root {
+    --main-font: 'Arial', sans-serif;
+    --main-color: #333;
+    --bg-color: #f4f4f4;
+    --header-bg: #4500ce;
+    --footer-bg: #333;
+    --project-bg: #fff;
+    --input-border: #ccc;
+    --button-bg: #4CAF50;
+}
+
+
+body, input, button, textarea {
+    font-family: var(--main-font);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    transition: background-color 0.3s;
+}
+
+header {
+    /* Your existing styles */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.project {
+    /* Your existing styles */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.project:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    /* Your existing styles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input, textarea {
+    /* Your existing styles */
+    color: var(--main-color);
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+button {
+    /* Your existing styles */
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #367c39;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    header, section, footer {
+        padding: 1rem;
+    }
+
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .project, input, textarea, button {
+        max-width: none;
+    }
+}
