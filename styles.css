@@ -9,7 +9,6 @@
     --button-bg: #4CAF50;
 }
 
-
 body, input, button, textarea {
     font-family: var(--main-font);
 }
@@ -23,45 +22,64 @@ body {
     transition: background-color 0.3s;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
+
 header {
-    /* Your existing styles */
+    background: var(--header-bg);
+    color: #fff;
+    padding: 2rem 0;
     text-align: center;
+    font-family: 'Source Code Pro', monospace; /* Use a monospaced font */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600; /* Bolder weight for the title */
+}
+
+header p {
+    margin: 0;
+    font-weight: 400; /* Regular weight for the subtitle */
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
+    margin: 1rem 0;
 }
 
-nav li {
+nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 1rem;
 }
 
-nav a {
+nav ul li a {
     text-decoration: none;
-    color: white;
-    transition: color 0.3s;
+    color: #fff;
+    font-weight: 700;
+    transition: color 0.3s ease-in-out;
 }
 
-nav a:hover {
-    color: #ddd;
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #dddddd;
+}
+main {
+    padding: 2rem;
 }
 
-h1, h2 {
-    font-weight: 300;
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h2 {
-    font-size: 1.5rem;
+section {
+    margin: auto;
+    padding: 2rem;
+    max-width: 50rem;
 }
 
 .project {
-    /* Your existing styles */
+    background: var(--project-bg);
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border: 1px solid var(--input-border);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s;
 }
@@ -70,23 +88,58 @@ h2 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    /* Your existing styles */
-    display: flex;
+#core-skills {
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
     justify-content: center;
+    padding: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.skill-item i {
+    font-size: 2rem; /* Larger icons */
+    margin-bottom: 0.5rem;
+}
+
+.skill-item p {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--footer-bg);
+    color: #fff;
 }
 
 input, textarea {
-    /* Your existing styles */
-    color: var(--main-color);
-    background-color: #fff;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--input-border);
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 button {
-    /* Your existing styles */
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
     border-radius: 4px;
+    cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -95,17 +148,129 @@ button:hover {
     transform: translateY(-3px);
 }
 
+@media ( min-width: 768px ) {
+    main {
+        padding: 4rem;
+    }
+
+    section {
+        padding: 4rem;
+    }
+}
+
+#contact {
+    background: var(--bg-color);
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.btn-send {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-send:hover,
+.btn-send:focus {
+    background-color: #367c39;
+    transform: translateY(-2px);
+}
+
+#contact {
+    text-align: center;
+    padding: 2rem;
+}
+
+.social-links {
+    margin: 1rem 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 1rem;
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-links i {
+    margin-right: 8px;
+    color: var(--header-bg); /* Use your theme color */
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover i,
+.social-links a:focus i {
+    color: var(--button-bg);
+}
+
+
+#about-me {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 2rem;
+}
+
+#about-me .about-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+#about-me .about-highlight {
+    color: #4500ce;
+    font-weight: bold;
+}
+
+/* Uncomment and update the .profile-pic class if you're adding an image */
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+}
+
+#about-me p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* For responsive design */
 @media (max-width: 768px) {
-    header, section, footer {
+    #about-me .about-container {
         padding: 1rem;
-    }
-
-    nav li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .project, input, textarea, button {
-        max-width: none;
     }
 }

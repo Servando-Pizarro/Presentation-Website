@@ -8,21 +8,45 @@
 </head>
 <body>
     <header>
-        <h1>Servando Pizarro Martinez</h1>
-        <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <p>Data Scientist | AI Enthusiast | Student at the University of Cologne</p>
+        <img src="Yo.jpeg" alt="Peter Pan" class="profile-pic"> 
+        <h1>Peter Pan</h1>
+        <p>Data Scientist | AI Enthusiast | Data Warehousing </p>
+         <p>Masters Student at the University of Cologne</p>
     </header>
-
+    
     <main>
+        
         <section id="about-me">
             <h2>About Me</h2>
-            <p>Provide a compelling paragraph about your professional background, skills, and interests.</p>
+            <div class="about-container">
+                <!-- Consider adding a professional image if appropriate -->
+                
+                <p>
+                    <span class="about-highlight">Data enthusiast and AI explorer,</span> my journey is marked by a passion for unraveling the complexities of data. At the intersection of <span class="about-highlight">Large Language Models (LLMs)</span> and practical data solutions, I find my stride in creating robust data architectures using <span class="about-highlight">Data Vault methodology</span>. My toolkit is ever-expanding with hands-on experience in the <span class="about-highlight">Azure cloud platform</span>, where I innovate and adapt to the dynamic data landscape. I'm on a quest to decode the stories that data tells, driving insights that lead to informed decisions and spark innovation.
+                </p>
+            </div>
+        </section>
+
+        <section id="core-skills">
+            <h2>Core Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <p>Data Engineering</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-brain"></i>
+                    <p>Machine Learning</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cloud"></i>
+                    <p>Cloud Computing</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-tasks"></i>
+                    <p>Agile Project Management</p>
+                </div>
+            </div>
         </section>
         
         <section id="projects">
@@ -31,25 +55,39 @@
                 <h3>Project Title 1</h3>
                 <p>Provide a detailed description of your first project.</p>
             </article>
+            <article class="project">
+                <h3>Project Title 1</h3>
+                <p>Provide a detailed description of your first project.</p>
+            </article>
+            <article class="project">
+                <h3>Project Title 1</h3>
+                <p>Provide a detailed description of your first project.</p>
+            </article>
             <!-- Repeat for each project -->
         </section>
 
+
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
         <section id="contact">
             <h2>Contact</h2>
-            <form id="contact-form">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" placeholder="Your Name" required>
-                
-                <label for="email">Your Email</label>
-                <input type="email" id="email" placeholder="Your Email" required>
-                
-                <label for="message">Your Message</label>
-                <textarea id="message" placeholder="Your Message" required></textarea>
-                
-                <button type="submit">Send Message</button>
-            </form>
-            <p>Feel free to <a href="mailto:your.email@example.com">email me</a> or connect on <a href="yourLinkedInProfile">LinkedIn</a>.</p>
+            <div class="social-links">
+                <!-- LinkedIn -->
+                <a href="your-linkedin-url" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <!-- GitHub -->
+                <a href="your-github-url" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <!-- Email -->
+                <a href="mailto:your-email@example.com" title="Email">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
         </section>
+        
+        
     </main>
 
     <footer>
