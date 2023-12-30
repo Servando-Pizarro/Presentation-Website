@@ -13,3 +13,5 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         console.log('Validation failed');
     }
 });
+
+
