@@ -2,7 +2,7 @@
     --main-font: 'Arial', sans-serif;
     --main-color: #333;
     --bg-color: #f4f4f4;
-    --header-bg: #4500ce;
+    --header-bg: #172A45;
     --footer-bg: #333;
     --project-bg: #fff;
     --input-border: #ccc;
@@ -249,7 +249,7 @@ button:hover {
 }
 
 #about-me .about-highlight {
-    color: #4500ce;
+    color: #172A45;
     font-weight: bold;
 }
 
@@ -263,17 +263,31 @@ button:hover {
     display: block;
 }
 
-#about-me p {
-    line-height: 1.6;
-    text-align: justify;
+#about-me {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 2rem;
 }
 
-/* For responsive design */
-@media (max-width: 768px) {
-    #about-me .about-container {
-        padding: 1rem;
-    }
+#about-me h2 {
+    color: #172A45;
 }
+
+#about-me p {
+    font-size: 1rem; /* Adjust the font size as needed */
+    line-height: 1.6;
+    text-align: left; /* Align text to the left */
+    font-weight: normal; /* Ensures text is not bold */
+    margin-bottom: 1rem; /* Space below paragraph */
+}
+
+.highlight {
+    color: #172A45; /* Or any color that fits your design */
+    font-weight: bold;
+}
+
+
 
 
 section {
@@ -282,20 +296,64 @@ section {
 }
 
 h2 {
-    color: #4500ce;
+    color: #172A45;
     margin-bottom: 1rem;
 }
 
-#experience, #education {
+#professional-experience, #education {
     background-color: #f4f4f4;
-    border-left: 4px solid #4500ce;
+    border-left: 4px solid #172A45;
     padding-left: 1rem;
 }
+
+#professional-experience, #education  {
+    background-color: #f4f4f4; /* Or any light color that matches your theme */
+    padding: 2rem; /* Adjust padding to ensure enough white space */
+    margin-bottom: 2rem; /* Space before the next section */
+}
+
+
+#professional-experience h3 {
+    font-size: 1.2rem;
+    color: #000; /* Or another color if you prefer */
+    margin-bottom: 0.5rem;
+}
+
+#professional-experience p {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-left: 0; /* Ensure the text is not indented */
+    color: #333; /* Standard text color */
+}
+
+
+
+.education-entry {
+    margin-bottom: 1rem;
+    border-left: 4px solid #172A45; /* Left border color */
+    padding-left: 1rem;
+}
+
+.education-entry h3 {
+    font-size: 1.1rem; /* Slightly larger font size for institution name */
+    font-weight: bold; /* Bold font for institution name */
+    margin: 0.5rem 0; /* Margin around the institution name */
+}
+
+.education-entry p {
+    margin: 0; /* No margin for the degree and date text */
+    font-size: 1rem; /* Standard font size for degree and dates */
+}
+
+
+
+
 
 .resume-link {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #4500ce;
+    background-color: #172A45;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -310,7 +368,7 @@ h2 {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px 0;
-    background-color: #4500ce;
+    background-color: #172A45;
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
@@ -318,5 +376,86 @@ h2 {
 }
 
 .resume-button:hover {
-    background-color: #367c39;
+    background-color: #4500ce;
+}
+
+
+
+
+
+#certificates {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.certificate-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.certificate-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.certificate-card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.certificate-card i {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #4500ce;
+}
+
+.certificate-card h3 {
+    color: #4500ce;
+    margin-bottom: 0.5rem;
+}
+
+.certificate-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+.project-preview {
+    text-align: center; /* Center the image container */
+    margin-bottom: 20px; /* Space before the button */
+}
+
+.project-preview img {
+    max-width: 55%; /* Responsive image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for modern look */
+}
+
+.button-container {
+    text-align: center; /* Center the button container */
+    margin-top: 20px; /* Space after the image */
+}
+
+.view-presentation-button {
+    background-color: #172A45; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    text-decoration: none; /* Remove underline from anchor tag */
+    display: inline-block; /* Needed for centering inline elements */
+}
+
+.view-presentation-button:hover {
+    background-color: #4500ce; /* Darker green on hover */
 }
