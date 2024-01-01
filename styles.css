@@ -1,29 +1,51 @@
+/* Define color variables and font families */
 :root {
     --main-font: 'Arial', sans-serif;
     --main-color: #333;
     --bg-color: #f4f4f4;
-    --header-bg: #172A45;
+    --header-bg: #172A45; /* Updated color */
     --footer-bg: #333;
     --project-bg: #fff;
     --input-border: #ccc;
     --button-bg: #4CAF50;
 }
 
+/* Apply font family globally */
 body, input, button, textarea {
     font-family: var(--main-font);
 }
 
+/* Body styling */
 body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: var(--main-color);
     background-color: var(--bg-color);
-    transition: background-color 0.3s;
 }
 
+/* Importing Google Font for header */
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
 
+/* Header styling */
+header {
+    background: var(--header-bg);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* Adjustments for responsive design */
+@media (min-width: 768px) {
+    main {
+        padding: 4rem;
+    }
+
+    section {
+        padding: 4rem;
+    }
+}
 header {
     background: var(--header-bg);
     color: #fff;
@@ -428,34 +450,31 @@ h2 {
     color: #555;
 }
 
-
-.project-preview {
-    text-align: center; /* Center the image container */
-    margin-bottom: 20px; /* Space before the button */
-}
-
+/* Ensure the project preview images are centered and buttons are styled correctly */
 .project-preview img {
-    max-width: 55%; /* Responsive image width */
+    max-width: 55%; /* Ensure image is not larger than its container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Rounded corners for modern look */
+    display: block; /* Block display to allow margin auto to work */
+    margin: 0 auto; /* Center image */
 }
 
 .button-container {
     text-align: center; /* Center the button container */
-    margin-top: 20px; /* Space after the image */
 }
 
 .view-presentation-button {
-    background-color: #172A45; /* Green background */
-    color: white; /* White text */
-    padding: 10px 20px; /* Padding */
+    background-color: #172A45; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer on hover */
-    text-decoration: none; /* Remove underline from anchor tag */
-    display: inline-block; /* Needed for centering inline elements */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* Remove underline from text */
+    display: inline-block; /* Center button text */
+    margin-top: 20px; /* Space above the button */
 }
 
 .view-presentation-button:hover {
-    background-color: #4500ce; /* Darker green on hover */
+    background-color: #0f1c2d; /* Slightly darker on hover */
 }
