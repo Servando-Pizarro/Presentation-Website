@@ -509,3 +509,25 @@ h2 {
 
 
 
+header {
+    position: relative;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 20px; /* Passen Sie den Abstand nach oben entsprechend an */
+    right: 20px; /* Passen Sie den Abstand nach rechts entsprechend an */
+    font-size: 1rem;
+}
+
+.language-switcher a {
+    color: #fff; /* Farbe der Links, passend zum Header-Hintergrund */
+    text-decoration: none; /* Keine Unterstreichung der Links */
+    padding: 0 5px; /* Kleiner Abstand zwischen den Links */
+}
+
+.language-switcher a:hover {
+    text-decoration: underline; /* Unterstreichen beim Hovern zur besseren Sichtbarkeit */
+}
+
+
