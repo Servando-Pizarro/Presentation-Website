@@ -10,6 +10,33 @@
     --button-bg: #4CAF50;
 }
 
+/* Navigation Menu Styling */
+nav {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff; /* Adjust the color to match your header */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #dddddd; /* Lighten the color on hover for feedback */
+}
+
 /* Apply font family globally */
 body, input, button, textarea {
     font-family: var(--main-font);
@@ -99,7 +126,7 @@ section {
 
 .project {
     background: var(--project-bg);
-    margin: 2rem 0;
+    margin: 2rem 0 4rem 0; /* Top and bottom margin */
     padding: 1.5rem;
     border: 1px solid var(--input-border);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -460,7 +487,8 @@ h2 {
 }
 
 .button-container {
-    text-align: center; /* Center the button container */
+    text-align: center;
+    margin-bottom: 50px; /* Center the button container */
 }
 
 .view-presentation-button {
@@ -478,3 +506,6 @@ h2 {
 .view-presentation-button:hover {
     background-color: #0f1c2d; /* Slightly darker on hover */
 }
+
+
+
