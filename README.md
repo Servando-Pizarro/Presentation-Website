@@ -20,8 +20,8 @@ Welcome to the repository of my personal portfolio website, a concise showcase o
 
 ## Development Highlights
 
-- Hosted on Render for its simplicity and cost-effectiveness.
-- Domain acquisition from IONOS, ensuring a personalized web address on a shoestring budget.
+- Hosted on [Render](https://render.com/) for its simplicity and cost-effectiveness. 
+- Domain acquisition from [IONOS](https://www.ionos.de/websites/homepage-erstellen), ensuring a personalized web address on a shoestring budget.
 - Embracing the challenge as a learning opportunity, demonstrating adaptability and growth mindset.
 
 ## Reflections
